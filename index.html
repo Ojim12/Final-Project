@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Site Metas -->
+    <title>Fundamentals of Computing</title>
+    <meta name="keywords" content="computing, computer science, fundamentals, programming">
+    <meta name="description" content="A course providing an introduction to the fundamentals of Computer Science.">
+    <meta name="author" content="University of Belize">
+    <!-- Site icon -->
+    <link rel="icon" href="images/fevicon.png" type="image/png" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            animation: fadeIn 1s;
+        }
+        header {
+            background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent background */
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s;
+        }
+        .navbar {
+            background-color: rgba(0, 123, 255, 0.9);
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffc107 !important;
+        }
+        .navbar-brand img {
+            border-radius: 50%;
+        }
+        .banner_section_top {
+            position: relative;
+            overflow: hidden;
+            background-color: #333; /* Fallback in case image doesn't load */
+            animation: fadeIn 1.5s;
+        }
+        .banner_section_top img {
+            width: 100%;
+            height: auto;
+            opacity: 0.8; /* Dim the background image */
+        }
+        .slide_cont {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .slide_cont h3 {
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: fadeIn 2s;
+        }
+        .blue_bt {
+            background-color: #ffc107;
+            color: #343a40;
+            padding: 10px 25px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            text-decoration: none;
+        }
+        .blue_bt:hover {
+            background-color: #e0a800;
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+            animation: fadeIn 1.5s;
+        }
+        .footer p {
+            margin: 0;
+        }
+
+        /* Animation Effects */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* About Section */
+        .about_dottat {
+            animation: fadeIn 2s;
+        }
+
+        /* Work Time Section */
+        .cours_timging_bg ul {
+            list-style: none;
+            padding: 0;
+        }
+        .cours_timging_bg li {
+            background-color: #f0f0f0;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cours_timging_bg li:hover {
+            background-color: #ffc107;
+        }
+    </style>
+</head>
+<body id="home_page" class="home_page">
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="LogoUB.png" alt="Logo" width="40">
+                </a>
+                <!-- Navbar Toggler for mobile -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link color-aqua-hover" href="project.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-aqua-hover" href="concepts.html">Concepts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-grey-hover" href="database.html">Databases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-grey-hover" href="documentation.html">Documentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-grey-hover" href="aboutme.html">Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Banner Section -->
+    <section class="main_full banner_section_top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="full">
+                    <div class="slider_banner">
+                        <img class="img-responsive" src="computing banner.png" alt="Computing Banner" />
+                        <div class="slide_cont">
+                            <h3>Fundamentals of Computing</h3>
+                            <a class="blue_bt" href="https://drive.google.com/file/d/1IBXQA2-E09ffge98SgRC7p_zd80RBVBn/view?usp=sharing">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Section -->
+   
+    <!-- About Section -->
+    <section id="about" class="layout_padding section about_dottat">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text_align_center">
+                    <div class="full heading_s1">
+                        <h2>About</h2>
+                    </div>
+                    <div class="full">
+                        <p class="large">This course is an introduction to the fundamentals of Computer Science that will provide students with a foundation for future courses in Computer Science. The course is a broad survey of the discipline through topics that allow students to understand the capabilities of computer systems in terms of: computer architecture; operating systems and computer networks; software development; data organization and visualization; and the potential of computing machines.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 text_align_center">
+                    <div class="about_img margin_top_30">
+                        <a href="https://drive.google.com/file/d/1C5PqSLn3OorJmsgRsHjX3tRnbZBUiZKk/view?usp=sharing">
+                            <img src="computing-fundamentals.jpg" alt="About Image" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Work Time Section -->
+    <section id="work-time" class="layout_padding section">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-12 text_align_center">
+                  <h2>Our Work Time</h2>
+               </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 cours_timging_bg">
+                 <div class="container">
+                    <div class="time_table">
+                          <ul><li>Monday</li><li>11 Am - 2 Pm</li></ul>
+                          <ul><li>Tuesday</li><li>8 Am - 3 Pm</li></ul>
+                          <ul><li>Wednesday</li><li>11 Am - 2Pm</li></ul>
+                          <ul><li>Thursday</li><li>8  Am - 3 Pm</li></ul>
+                          <ul><li>Friday</li><li>Free</li></ul>
+                                             </div>
+                 </div>        
+              </div> 
+            </div>
+         </div>
+      </section>
+      <!-- end section -->

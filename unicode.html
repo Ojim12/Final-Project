@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals of Computing - UNICODE Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: fadeIn 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Project 1: UNICODE</h1>
+</header>
+
+<section>
+    <h2>Please input UNICODE number:</h2>
+    <hr>
+    <div class="text-center">
+        <input id="numb" type="text" class="form-control" style="width: 300px; margin: 0 auto;">
+        <button type="button" onclick="myFunction()" class="btn btn-primary mt-2">Submit</button>
+
+        <div class="mt-3">
+            <table class="table table-bordered">
+                <tr>
+                    <th><p id="demo" class="text-center"></p></th>
+                </tr>
+            </table>
+        </div>
+
+        <img src="uni1.jpg"

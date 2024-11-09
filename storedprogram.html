@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Stored Program Concept</title>
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+            color: #333;
+            margin: 30px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%; /* Make the image responsive */
+            height: auto;
+        }
+        .myDIV {
+            width: 150px;
+            background-color: red;
+            float: left;
+            padding: 10px;
+            margin-right: 20px;
+        }
+        .button {
+            height: 30px;
+            width: 150px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .center {
+            margin: auto;
+            width: 70%;
+            border: 3px solid green;
+            padding: 10px;
+            display: inline-block; /* Aligns the image with the buttons */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Stored Program Concept</h2>
+<p>Visualization of an Assembly Program and Data being loaded into the CPU Registers, executed, and the output stored back in Memory</p>
+
+<div class="center">
+    <img id="myImage" src="ks0.PNG" alt="Stored Program Visualization">
+</div>
+
+<div class="myDIV">
+    <button class="button" onclick="document.getElementById('myImage').src='ks1.PNG'">DATA</button>
+    <button class="button" onclick="document.getElementById('myImage').src='ks2.PNG'">PROGRAM</button>
+    <button class="button" onclick="document.getElementById('myImage').src='ks3.PNG'">EXECUTE LINE 1</button>
+    <button class="button" onclick="document.getElementById('myImage').src='ks4.PNG'">EXECUTE LINE 2</button>
+    <button class="button" onclick="document.getElementById('myImage').src='ks5.PNG'">EXECUTE LINE 3</button>
+    <button class="button" onclick="document.getElementById('myImage').src='ks6.PNG'">EXECUTE LINE 4</button>
+    <button class="button" onclick="document.getElementById('myImage').src='ks7.PNG'">EXECUTE LINE 5</button>
+</div>
+
+</body>
+</html>

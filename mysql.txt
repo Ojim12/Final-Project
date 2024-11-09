@@ -1,0 +1,16 @@
+CREATE TABLE `books` (
+  `id` INT(11) NOT NULL,
+  `name` VARCHAR(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `author` VARCHAR(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `readings` VARCHAR(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `objectives` VARCHAR(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` TEXT COLLATE utf8mb4_unicode_ci NOT NULL,
+  `strategies` TEXT COLLATE utf8mb4_unicode_ci NOT NULL,
+  `assessments` VARCHAR(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `regulations` VARCHAR(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+ALTER TABLE `books` MODIFY `id` INT(11) NOT NULL AUTO_INCREMENT;

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('ths.jpg'); /* Update the image filename as needed */
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: blue; /* Change color as desired */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Technical High School</p> <!-- Update the institution name -->
+  </div>
+  <div class="middle">
+    <br><br><br>
+    <h1>Transfer to THS</h1>
+    <hr>
+    <p><a href="http://localhost:3000/books">TRANSFER</a></p>
+  </div>
+  <div class="bottomright">
+    <p><img src="thlogo.png" alt="THS" style="width:116px;height:72px;"></p> <!-- Update logo filename -->
+  </div>
+</div>
+
+</body>
+</html>

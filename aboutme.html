@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fundamentals of Computing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #f9f4f4;
+            background-color: #172f57;
+            margin: 0;
+        }
+
+        /* Updated Navbar Styles */
+        .navbar {
+            background-color:  #14152b;
+            padding: 15px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar:hover {
+            background-color: #444;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: #f4f4f9;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar-brand:hover {
+            color: #ffcc00;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+        }
+
+        .navbar-nav a {
+            color: #f4f4f9;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .navbar-nav a:hover {
+            background-color: #555;
+            transform: scale(1.1);
+            letter-spacing: 1px;
+        }
+
+        /* General Container */
+        .container {
+            padding: 60px 80px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f4f4f9;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Team Section */
+        .team {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            max-width: 220px;
+            background-color: #14152b;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .team-member img {
+            width: 150px;  
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            margin-bottom: 5px;
+            color: #f4f4f9;
+        }
+
+        .team-member p {
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        /* Quote Styling */
+        .team-member .quote {
+            font-style: italic;
+            color: #ccc;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        /* Contact Information */
+        .team-member .contact-info {
+            font-size: 18px;
+            color: #1fe309; /* Original color for emails */
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .team-member .contact-info:hover {
+            text-decoration: underline;
+        }
+
+        /* Additional styling specifically for "View Resume" and "Individual Project" links */
+        .links a {
+            font-size: 18px;
+            color: #396f85; /* New color for the links */
+            text-decoration: none;
+            margin-right: 10px; /* Space between links */
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #f4f4f9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2><b>Fundamentals of Computing</b></h2>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Course</a></li>
+                <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                <li class="nav-item"><a class="nav-link" href="concepts.html">Concepts</a></li>
+                <li class="nav-item"><a class="nav-link" href="database.html">Databases</a></li>
+                <li class="nav-item"><a class="nav-link" href="documentation.html">Documentation</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutme.html">Dev Team</a></li>
+                            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="container mt-4">
+    
+
+    <!-- Team Section -->
+    <div class="team">
+        <!-- Example Team Member -->
+        <div class="team-member">
+            <img src="jimmy.jpeg" alt="Team Member 1">
+            <h3>Jimmy Ordaz</h3>
+            <p>Lead Developer</p>
+            <p class="quote">"Coding is my passion."</p>
+            <a href="mailto:ordazjimmy3@gmail.com" class="contact-info">Contact </a>
+            <div class="links">
+                <a href="https://ojim12.github.io/HTML-Resume/Resume.HTML" target="_blank">View Resume</a>
+                <a href="https://ojim12.github.io/Individual-Project/index.html">Individual Project</a>
+            </div>
+        </div>
+        <!-- Another Team Member -->
+        <div class="team-member">
+            <img src="elan.jpg" alt="Team Member 2">
+            <h3>Elan Moore</h3>
+            <p>Developer</p>
+            <p class="quote">"Coding is fun"</p>
+            <a href="mailto:jane@example.com" class="contact-info">Contact</a>
+            <div class="links">
+                <a href="https://papielan.github.io/html-resume/resume.html">View Resume</a>
+                <a href="https://papielan.github.io/individual-final-project/aboutme.html">Individual Project</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2024 Fundamentals of Computing. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
